@@ -28,7 +28,7 @@ function renderLicenseSection(license) {
 
   return `## License
 
-  This project utilizes the ${license} . If you would to read additional documentaion on licensing please visit [https://choosealicense.com/].
+  This project utilizes the ${license} license. If you would to read additional documentaion on licensing please visit [https://choosealicense.com/].
   `
 }
 
@@ -69,14 +69,11 @@ function generateMarkdown(data) {
 
   ## Questions
 
+  Github Profile: [${data.github}](https://github.com/${data.github})
+  If you have any further questions feel free to reach out to me
+  at my email address ${data.email}.
 
-
-  ## License
-
-  ${renderLicenseLink(data.license)}
-
-
-
+  ${renderLicenseSection(data.license)}
 
 `;
 }
