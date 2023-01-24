@@ -27,15 +27,25 @@ function renderLicenseSection(license) {
   }
 
   return `## License
-  
+
+  This project utilizes the ${license} . If you would to read additional documentaion on licensing please visit [https://choosealicense.com/].
   `
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ## Badges
+
   ${renderLicenseBadge(data.license)}
-'here is the link to the license 
+
+  ## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+
 `;
 }
 
