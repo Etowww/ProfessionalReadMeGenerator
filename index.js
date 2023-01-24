@@ -28,12 +28,12 @@ const questions = [
     {
         type: 'input',
         message: 'How can others contribute to the project?',
-        name: 'contributing',
+        name: 'contribution',
     },
     {
         type: 'input',
         message: 'How can this application be tested?',
-        name: 'tests',
+        name: 'testing',
     },
     {
         type: 'list',
